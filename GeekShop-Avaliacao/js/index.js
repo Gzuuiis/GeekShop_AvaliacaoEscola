@@ -119,7 +119,7 @@ var telefone = document.getElementById('telefone')
 function envpedido(){
   var valorrecebido = itensvisiveis.every(elem => elem == "a")
 
-  if(valorrecebido == false && nomecliente.value.length > 3 && itensvisiveis.length >= 1 && sobrenome.value.length > 3 && email.value.length > 6 && endereco.value.length > 8 && cpf.value.length == 14 && telefone.value.length == 13){
+  if(valorrecebido == false && nomecliente.value.length >= 3 && itensvisiveis.length >= 1 && sobrenome.value.length >= 3 && email.value.length > 6 && endereco.value.length > 8 && cpf.value.length == 14 && telefone.value.length == 13){
     var FazComennt = document.getElementById("FazerComentario").style.display ="block"
     document.getElementById("comentarea").style.display = "block"
     document.getElementById('carrinho').style.display ="none"
